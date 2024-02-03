@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form for="/action_page.php">
+    <center>
+    <div id="judul" style="display: flex; justify-content: center;">
+
+    <h1>Pemesanan Tiket </h1><img src="logo_ka-removebg-preview.png" align="" style="width: 75px;" >
+    </div><hr><br>
+    <b>
+    <div id="nama">
+        <label for="nama">Nama:</label> 
+        <input type="text" id="nama" name="nama"><br><br>
+    </div>
+    <div id="email">
+        <label for="email">Alamat email: </label>  <input type="email" id="email" name="email"> <br><br>
+    </div>
+    <div id="nomor telp">
+        <label for="telphone">Nomor telp:</label> <input type="number" id="telphone"> <br><br>
+    </div>
+    <div id="tanggal">
+        <label for="berangkat"> Tanggal berangkat </label> : <input type="date" name="berangkat"> <br><br>
+    </div>
+    <div id="tujuan">
+        
+        <label id=" tujuan">Tujuan</label>: 
+        <select id="tujuan">
+            <option value="1">Jakarta</option>
+            <option value="2">Bandung</option>
+            <option value="3">Semarang</option>
+            <option value="4">Jogja</option>
+                
+        </select><br><br>
+    </div>
+    <div id="jumlah">
+        <label for="kursi>">Jumlah kursi</label>
+        <input type="number" id="kursi" name="kursi" min="1" max="5"><br>
+        *maks 5
+    </div><br>
+    
+    <div id="pilih kelas"></div>
+        <label for kelas>kelas gerbong: </label> <br>
+        <input type="radio" id="ekonomi" name="kelas" value="ekonomi">
+        <label fpr="ekonomi">Ekonomi</label>
+        <input type="radio" id="eksekutif" name="kelas" value="eksekutif">
+        <label fpr="eksekutif">Eksekutif</label>
+        <input type="radio" id="sleeper" name="kelas" value="sleeper">
+        <label fpr="sleeper">Sleeper</label>
+        </div>
+        <br><br>
+    <div id="button">
+        <button type="submit">kirim</button>
+    </div>
+    </b>
+    </center>
+</form>
+
+</body>
+</html>

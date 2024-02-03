@@ -1,0 +1,233 @@
+* {
+    font-family: poppins;
+}
+
+img{
+    transition: ease-in 0.5s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.navbar {
+    background-color: rgb(110, 67, 251);
+    box-shadow: -1px 19px 33px -30px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 19px 33px -30px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 19px 33px -30px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-name{
+    color: #fff;
+}
+
+.navbar .link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    margin-right: 40px;
+    transition: all ease-in 0.3s;
+
+}
+
+.all{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar .link:hover {
+    color: rgb(1, 1, 0);
+    border-bottom: 2px solid rgb(1, 1, 68);
+    padding-bottom: 5px;
+    transition: all ease-out 0.3s;
+
+}
+
+.navbar .btn-contact {
+    text-decoration: none;
+    color: #fff;
+    background-color: orange;
+    border-radius: 20px 2px 20px 20px;
+    padding: 8px 24px 10px 24px;
+    font-weight: 500;
+}
+
+.navbar .btn-contact:hover {
+    background-color: rgb(255, 178, 36);
+}
+
+#header {
+    padding-top: 100px;
+    background-image: url(piqsels.com-id-jxeaa.jpg);
+    background-size: 100%;
+    height: 800px;
+    padding-bottom: 80vh;
+    background-repeat: no-repeat;
+}
+
+.pp-header{
+    border-radius: 50%;
+}
+
+.row img{
+    max-width: 70%;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.row img:hover{
+    width: 100%;
+}
+
+#header h4 {
+    font-weight: 500;
+}
+
+#header h2{
+    color: #fff;
+}
+
+.
+
+#header i {
+    color: rgb(121, 0, 234);
+    box-shadow: 20px rgba(0, 0, 0, 0.486);
+}
+
+/* Jasa */
+#skil{
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+#skil .card{
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+ 
+}
+.deskripsi{
+    text-align: center;
+}
+
+/* Jasa */
+
+/* About */
+#about{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.profile{
+    max-width: 60%;
+    margin-top: 15%;
+}
+
+.profile img{
+    border-radius: 15px;
+}
+
+.footer{
+   display: block;
+   position: relative;
+   align-items: center;
+}
+
+.sosmed h2{
+    margin-bottom: 30px;
+}
+
+.ig{
+    max-width: 7%;
+    min-width: 75px;
+    margin-left: 15%;
+    margin-right: 30px;
+    margin-top: 20px;
+
+}
+
+.wa{
+    margin-top: 20px;
+    margin-left: 100px;
+    max-width: 7%;
+    min-width: 75px;
+}
+
+.yt{
+    max-width: 7%;
+    margin-top: 20px;
+    margin-left: 100px;
+    min-width: 75px;
+}
+
+hr{
+   border: 2px dashed black;
+}
+
+.footer{
+    margin-top: 50px;
+}
+
+
+/* About */
+
+/* Portofolio */
+
+#portofolio{
+    padding-top: 100px ; 
+    padding-bottom: 150px;
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .card{
+        width: 100%;
+    }
+} 
+
+@media (max-width: 575.98px) {
+    .navbar li{
+        margin-bottom: 16px;
+    }
+
+    .navbar .btn-contact{
+        display: block;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+
+    .deskripsi {
+        margin-top: 20px;
+    }
+
+    }
+    .header{
+        background-size: cover;
+        height: max-content;
+    }
+
+    #header h1{
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .ig{
+        margin: 0;
+    }
+
+    .yt{
+        margin: 0;
+    }
+
+    .wa{
+        margin: 0;
+    }
+}
+

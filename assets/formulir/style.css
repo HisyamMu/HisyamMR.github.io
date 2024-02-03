@@ -1,0 +1,16 @@
+body{
+    background-image: url(bg\ KA1.jpg);
+    background-size: 100%;
+    color: black;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+form{
+    background-color: grey;
+    width: 700px;
+    height: 700px;
+} 

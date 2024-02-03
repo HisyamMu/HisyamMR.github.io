@@ -1,0 +1,82 @@
+<html>
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Konversi waktu</title>
+</head>
+<body>
+    <div class="bg">
+    </div>
+    <div class="container">
+
+        <div class="jam">
+        <div class="jam-digital">
+            <div class="kotak">
+                <p id="jam"></p>
+            </div>
+            <div class="kotak">
+                <p id="menit"></p>
+            </div>
+            <div class="kotak">
+                <p id="detik"></p>
+            </div>
+        </div>
+        </div>
+    <center>
+        <h1>Konversi Detik Ke Jam, Menit, dan Detik</h1>
+    <br>
+    </center>
+    <center>
+        <label>Input: </label>
+        <input id="lbldetk" type="number" placeholder="Detik">
+        <label>Detik</label>
+        <br><br>
+        <label>Hasil :</label>
+        <label id="result"></label>
+        <br><br>  
+    <div class="button">
+        <input type="button" value="Proses" onclick="proses()"><br>
+        <input type="button" value="Reset" onclick="reset()">
+    </div>
+    </div> 
+    </center>
+
+<script type="text/javascript">
+    window.alert('Selamat datang di website waktu')
+
+    window.setTimeout("waktu()", 1000);
+ 
+    function waktu() 
+    {
+        var waktu = new Date();
+        setTimeout("waktu()", 1000);
+
+        document.getElementById("jam").innerHTML = waktu.getHours();
+        document.getElementById("menit").innerHTML = waktu.getMinutes();
+        document.getElementById("detik").innerHTML = waktu.getSeconds();
+    }
+
+    function proses()
+    {
+        var x;
+        x = parseInt(document.getElementById("lbldetk").value);
+        var y;
+        var jam;
+        var menit;
+        var detik;
+
+        y = x % 3600;
+        jam   = x / 3600;
+        menit = y / 60;
+        detik = y % 60;
+
+        result.innerHTML = Math.floor(jam) + ' Jam ' + Math.floor(menit) + ' Menit ' + Math.floor(detik) + ' Detik ';
+    }
+    function reset()
+    {
+            document.getElementById("lbldetk").value = "";
+            document.getElementById("result").innerHTML = "Masukan bilangan";
+    }
+    </script>
+</body>
+</html>
